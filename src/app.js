@@ -2,7 +2,8 @@ import logger from 'morgan';
 import express, { json, urlencoded } from 'express';
 import cookieParser from 'cookie-parser';
 import indexRouter from './routes/index';
-var app = express();
+
+const app = express();
 
 app.use(logger('dev'));
 app.use(json());
